@@ -1,19 +1,16 @@
-import ListGroup from './components/ListGroup'
-import './App.css'
+import {AiOutlineMinusCircle} from 'react-icons/ai';
+import {CiMinimize1} from 'react-icons/ci';
+import {FaWindowClose} from 'react-icons/fa'
+import './App.css';
 
 
 function App() {
 
-  const items = [
-    'New York',
-    'Paris',
-    'Delhi',
-    'London'
-  ]
-
   return (
     <>
-    <ListGroup items={items} heading='Cities' onSelectItem={(item)=> console.log(item)}/>
+      <AiOutlineMinusCircle size='40' color='green' />
+      <CiMinimize1 size='40' color='brown' />
+      <FaWindowClose size='40' color='red' />
     </>
   )
 }
