@@ -1,17 +1,25 @@
 
+import { useState } from 'react';
 import './App.css';
-import LikeButton from './components/LikeButton';
+import Game from './components/Game';
 
 
 function App() {
 
-  function handleLikeClick(){
-    console.log('Clicked');
+  const [game, setGame] = useState({
+    id: 1,
+    player: {
+      name: "John",
+    },
+  })
+
+  const handleClick = () => {
+    setGame({...game, player: {...game.player, name: 'Akash'}});
   }
 
   return (
     <>
-      <LikeButton onClick={handleLikeClick} />
+      <Game game={game} onClick={handleClick}/>
     </>
   )
 }
