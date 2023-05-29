@@ -1,20 +1,14 @@
 
-import { useState } from 'react';
 import './App.css';
-import ExpandableText from './components/ExpandableText';
+import Form from './components/Form';
 
 
-function App() {
-
-  const expnadableTextClick = () => console.log('clicked');
-  
+function App() {  
 
   return (
 
     <>
-    <ExpandableText onClick={expnadableTextClick}> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus eligendi tenetur consectetur magni accusantium aut unde odit nisi? Cum, eaque sit porro natus inventore sint distinctio alias reiciendis pariatur?
-    </ExpandableText> 
+    <Form />
     </>
   )
 }
